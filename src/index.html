@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <base href="/">
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide { display: none!important; }
+
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+    <title ng-bind="title"></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- build:css styles/lib.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/src/bower_components/angular-ui-grid/ui-grid.css" />
+    <link rel="stylesheet" href="/src/bower_components/toastr/toastr.css" />
+    <link rel="stylesheet" href="/src/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/src/bower_components/angular-tooltips/dist/angular-tooltips.min.css" />
+    <link rel="stylesheet" href="/src/bower_components/ng-tags-input/ng-tags-input.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/app.css-->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/src/styles/custom.css">
+    <link rel="stylesheet" href="/src/styles/less.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+
+
+
+</head>
+<body>
+<div>
+    <div ng-include="'app/layout/shell.html'"></div>
+</div>
+
+<!-- build:js js/lib.js -->
+<!-- bower:js -->
+<script src="/src/bower_components/angular/angular.js"></script>
+<script src="/src/bower_components/angular-animate/angular-animate.js"></script>
+<script src="/src/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="/src/bower_components/angular-filter/dist/angular-filter.js"></script>
+<script src="/src/bower_components/angular-flot/angular-flot.js"></script>
+<script src="/src/bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="/src/bower_components/angular-messages/angular-messages.js"></script>
+<script src="/src/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="/src/bower_components/angular-ui-grid/ui-grid.js"></script>
+<script src="/src/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/src/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+<script src="/src/bower_components/jquery/dist/jquery.js"></script>
+<script src="/src/bower_components/flot/jquery.flot.js"></script>
+<script src="/src/bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
+<script src="/src/bower_components/moment/moment.js"></script>
+<script src="/src/bower_components/toastr/toastr.js"></script>
+<script src="/src/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/src/bower_components/angular-touch/angular-touch.js"></script>
+<script src="/src/bower_components/angular-tooltips/dist/angular-tooltips.min.js"></script>
+<script src="/src/bower_components/ng-tags-input/ng-tags-input.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- build:js js/app.js-->
+<!-- inject:js -->
+<script src="/src/app/app.module.js"></script>
+<script src="/src/app/core/core.module.js"></script>
+<script src="/src/app/core/router-helper.provider.js"></script>
+<!-- endinject -->
+
+<!--INJECTED DYNAMICALLY ON BUILD AND APPENDED TO APP.JS-->
+<!-- inject:htmlcache:js -->
+<!-- endinject -->
+<!-- endbuild -->
+</body>
+</html>
