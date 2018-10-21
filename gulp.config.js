@@ -15,7 +15,7 @@ module.exports = function () {
         bower: bower,
         temp: temp,
         buildPath: './build/',
-        event: 'think/2019ems/ui',
+        event: 'named reddit',
         testbuildPath: {
             src: './testbuild',
             build: {

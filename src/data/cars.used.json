@@ -1,0 +1,18 @@
+{
+  "type":"subreddit",
+  "name":"cars/used",
+  "posts": [
+    {
+      "id":100,
+      "title":"Used car for sale! 900k!",
+      "karma":-342,
+      "date": "Jan 3 2018"
+    },
+    {
+      "id":101,
+      "title":"How reliable are used Nissan Maxima?",
+      "karma":30,
+      "date": "Oct 2 2018"
+    }
+  ]
+}

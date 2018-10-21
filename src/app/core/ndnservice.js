@@ -29,7 +29,7 @@
             if(service.environment == 'dev'){
                 return $http({
                     method: 'GET',
-                    url : '../data/'+nameInterest+'.json',
+                    url : '../data/'+nameInterest.replace('/','.')+'.json',
                     responseType : 'json'
                 }).then(success).catch(fail);
             }else{

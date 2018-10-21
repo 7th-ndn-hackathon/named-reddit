@@ -37,7 +37,7 @@
         function onDataSearch(interest, data)
         {
             var results = JSON.parse(data.getContent().buf().toString('binary'));
-            $scope.posts = results.posts;
+            $scope.results = results;
         }
     }
 })();
