@@ -19,7 +19,6 @@
 
     <!-- build:css styles/lib.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/src/bower_components/angular-ui-grid/ui-grid.css" />
     <link rel="stylesheet" href="/src/bower_components/toastr/toastr.css" />
     <link rel="stylesheet" href="/src/bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="/src/bower_components/angular-tooltips/dist/angular-tooltips.min.css" />
@@ -52,7 +51,6 @@
 <script src="/src/bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="/src/bower_components/angular-messages/angular-messages.js"></script>
 <script src="/src/bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="/src/bower_components/angular-ui-grid/ui-grid.js"></script>
 <script src="/src/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="/src/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
 <script src="/src/bower_components/jquery/dist/jquery.js"></script>
@@ -68,12 +66,18 @@
 <!-- endbuild -->
 
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
 <!-- build:js js/app.js-->
 <!-- inject:js -->
 <script src="/src/app/app.module.js"></script>
 <script src="/src/app/core/core.module.js"></script>
+<script src="/src/app/homepage/homepage.controller.js"></script>
+<script src="/src/app/layout/shell.controller.js"></script>
+<script src="/src/app/layout/top-nav.controller.js"></script>
+<script src="/src/app/core/config.js"></script>
+<script src="/src/app/core/logger.js"></script>
+<script src="/src/app/core/ndnservice.js"></script>
 <script src="/src/app/core/router-helper.provider.js"></script>
+<script src="/src/app/lib/ndn.js"></script>
 <!-- endinject -->
 
 <!--INJECTED DYNAMICALLY ON BUILD AND APPENDED TO APP.JS-->

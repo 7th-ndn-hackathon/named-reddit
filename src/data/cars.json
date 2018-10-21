@@ -1,0 +1,15 @@
+{
+  "type":"subreddit",
+  "posts": [
+    {
+      "id":1,
+      "title":"test1",
+      "karma":123
+    },
+    {
+      "id":2,
+      "title":"test2",
+      "karma":123
+    }
+  ]
+}

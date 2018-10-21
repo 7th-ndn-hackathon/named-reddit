@@ -4,9 +4,25 @@
     angular
         .module('app.core', [
             'ngAnimate', 'ngSanitize', 'ngMessages', 'ngTouch',
-            'blocks.exception', 'blocks.logger', 'blocks.router',
-            'ui.router', 'ngplus', 'angular.filter', 'ui.grid', 'ui.bootstrap', 'ngCookies'
-        ]).run(ConfigureRoute);
+            'core.logger','core.router',
+            'ui.router', 'ngplus', 'angular.filter', 'ui.bootstrap', 'ngCookies'
+        ])
+        .constant('toastr', toastr)
+        .constant('moment', moment)
+        .directive('ngEnter', function() {
+            return function(scope, element, attrs) {
+                element.bind("keydown keypress", function(event) {
+                    if(event.which === 13) {
+                        scope.$apply(function(){
+                            scope.$eval(attrs.ngEnter, {'event': event});
+                        });
+
+                        event.preventDefault();
+                    }
+                });
+            };
+        })
+        .run(ConfigureRoute);
 
     ConfigureRoute.$inject = ['routerHelper'];
     function ConfigureRoute(routerHelper) {

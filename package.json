@@ -37,6 +37,7 @@
     "gulp-useref": "^1.0.2",
     "gulp-util": "^3.0.1",
     "gulp-webserver": "^0.9.1",
+    "ndn-js": "git+https://github.com/named-data/ndn-js.git",
     "path": "^0.12.7",
     "run-sequence": "^2.2.1",
     "wiredep": "^4.0.0",

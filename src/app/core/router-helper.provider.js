@@ -3,9 +3,9 @@
     'use strict';
 
     angular
-        .module('blocks.router', [
+        .module('core.router', [
             'ui.router',
-            'blocks.logger'
+            'core.logger'
         ])
         .provider('routerHelper', routerHelperProvider);
 
