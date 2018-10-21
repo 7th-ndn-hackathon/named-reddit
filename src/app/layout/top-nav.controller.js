@@ -9,7 +9,7 @@
 
     function TopNavController($scope, logger, NdnService ) {
         var vm = this;
-
+        $scope.posts = [];
         $scope.items = [
             'The first choice!',
             'And another choice for you.',
@@ -36,8 +36,8 @@
 
         function onDataSearch(interest, data)
         {
-            console.log("Got data packet with name " + data.getName().toUri());
-            console.log(data.getContent().buf().toString('binary'));
+            var results = JSON.parse(data.getContent().buf().toString('binary'));
+            $scope.posts = results.posts;
         }
     }
 })();
