@@ -34,13 +34,6 @@
                     templateUrl: 'app/core/404.html',
                     title: '404'
                 }
-            },
-            {
-                state: 'homepage',
-                config: {
-                    url: '',
-                    redirectTo:'search'
-                }
             }
         ]);
     }

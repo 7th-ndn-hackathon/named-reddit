@@ -1,3 +1,32 @@
 <div ng-controller="HomepageController as vm">
+    <div class="col-lg-9" >
+        <div  ng-repeat="post in posts">
+            <div class="col-lg-12 post-block" ng-click="postClick(post)">
+                <div class="col-lg-1">
+                    <div>
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <div>
+                        {{post.karma}}
+                    </div>
+                    <div>
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
 
+                </div>
+                <div class="col-lg-11">
+                    <div>
+                        <p style="font-size: 1.5em;">
+                            {{post.title}}
+                        </p>
+                    </div>
+                    <div>
+                        <p style="font-size: 1.3em;">
+                            Posted on: {{post.date}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

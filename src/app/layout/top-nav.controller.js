@@ -5,11 +5,10 @@
         .module('app.topnav',['app.core'])
         .controller('TopNavController', TopNavController);
 
-    TopNavController.$inject = ['$scope', 'logger','NdnService'];
+    TopNavController.$inject = ['$rootScope','$scope', 'logger','NdnService'];
 
-    function TopNavController($scope, logger, NdnService ) {
+    function TopNavController($rootScope, $scope, logger, NdnService ) {
         var vm = this;
-        $scope.posts = [];
         $scope.items = [
             'The first choice!',
             'And another choice for you.',
@@ -37,7 +36,8 @@
         function onDataSearch(interest, data)
         {
             var results = JSON.parse(data.getContent().buf().toString('binary'));
-            $scope.results = results;
+            NdnService.searchResult = results;
+            $rootScope.$broadcast('postListUpdated');
         }
     }
 })();

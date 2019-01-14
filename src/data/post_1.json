@@ -1,0 +1,29 @@
+{
+  "id":1,
+  "title":"Check out this car!",
+  "text":"This car is the coolest!",
+  "karma":342,
+  "date": "Oct 3 2018",
+  "comments": [
+    {
+      "id":123,
+      "text":"hah that's cool!",
+      "karma":4,
+      "user":"carPerson",
+      "comments": [
+        {
+          "id":2342,
+          "text":"This is a response",
+          "karma":-4,
+          "user":"carPerson3"
+        }
+      ]
+    },
+    {
+      "id":7231,
+      "text":"This is boring",
+      "karma":-40,
+      "user":"carPerson"
+    }
+  ]
+}

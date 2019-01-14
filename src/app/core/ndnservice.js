@@ -11,7 +11,8 @@
 
     function NdnService( $http, $cookies, config, logger) {
         var service = {
-            expressInterest : expressInterest
+            expressInterest : expressInterest,
+            searchResult : {}
         };
 
 
@@ -51,8 +52,7 @@
             }
         }
 
-        function onTimeout(interest)
-        {
+        function onTimeout(interest) {
             logger.error("Time out for interest " + interest.getName().toUri());
         }
     }
