@@ -5,10 +5,10 @@
         .module('app.homepage',[
             'app.core'
         ])
-        .controller('HomepageController', HomepageController)
-        .run(ConfigureRoute);
+        .controller('HomepageController', HomepageController);
+        //.run(ConfigureRoute);
 
-    ConfigureRoute.$inject = ['routerHelper'];
+   /* ConfigureRoute.$inject = ['routerHelper'];
     function ConfigureRoute(routerHelper) {
         routerHelper.configureStates([
             {
@@ -20,14 +20,14 @@
                 }
             }
         ]);
-    }
+    }*/
 
     HomepageController.$inject = ['$rootScope','$scope', 'logger','NdnService'];
 
     function HomepageController($rootScope, $scope, logger, NdnService ) {
 
         var vm = this;
-
+        $scope.posts = [];
         activate();
 
         function activate(){
